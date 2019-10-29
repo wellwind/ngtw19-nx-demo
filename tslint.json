@@ -56,8 +56,16 @@
         "allow": [],
         "depConstraints": [
           {
-            "sourceTag": "*",
-            "onlyDependOnLibsWithTags": ["*"]
+            "sourceTag": "scope:todos",
+            "onlyDependOnLibsWithTags": ["scope:todos", "type:ui", "type:data-access"]
+          },
+          {
+            "sourceTag": "scope:dashboard",
+            "onlyDependOnLibsWithTags": ["scope:dashboard", "type:ui", "type:data-access"]
+          },
+          {
+            "sourceTag": "type:ui",
+            "onlyDependOnLibsWithTags": ["type:ui"]
           }
         ]
       }

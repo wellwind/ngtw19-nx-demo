@@ -12,22 +12,22 @@
       "tags": []
     },
     "todos": {
-      "tags": []
+      "tags": ["scope:todos"]
     },
     "dashboard-e2e": {
       "tags": []
     },
     "dashboard": {
-      "tags": []
+      "tags": ["scope:dashboard"]
     },
     "todo-data-access": {
-      "tags": []
+      "tags": ["scope:todos", "scope:dashboard", "type:data-access"]
     },
     "todo-ui": {
-      "tags": []
+      "tags": ["scope:todo", "scope:dashboard", "type:ui"]
     },
     "dashboard-ui": {
-      "tags": []
+      "tags": ["scope:dashboard", "type:ui"]
     }
   }
 }
