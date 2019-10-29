@@ -13,6 +13,18 @@
     },
     "todos": {
       "tags": []
+    },
+    "dashboard-e2e": {
+      "tags": []
+    },
+    "dashboard": {
+      "tags": []
+    },
+    "todo-data-access": {
+      "tags": []
+    },
+    "todo-ui": {
+      "tags": []
     }
   }
 }
