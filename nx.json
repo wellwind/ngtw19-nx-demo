@@ -25,6 +25,9 @@
     },
     "todo-ui": {
       "tags": []
+    },
+    "dashboard-ui": {
+      "tags": []
     }
   }
 }

@@ -1,0 +1,9 @@
+<input type="input" (keyup.enter)="addTodo.emit($event.target.value)" />
+
+<ul>
+  <li *ngFor="let item of todos">
+    <input type="checkbox" (change)="toggleTodo.emit(item)" />
+    <span>{{ item.title }}</span>
+    <span>[<a href="javascript:void(0);" (click)="deleteTodo.emit(item)">X</a>]</span>
+  </li>
+</ul>

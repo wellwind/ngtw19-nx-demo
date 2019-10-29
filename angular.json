@@ -307,6 +307,40 @@
         }
       },
       "schematics": {}
+    },
+    "dashboard-ui": {
+      "projectType": "library",
+      "root": "libs/dashboard-ui",
+      "sourceRoot": "libs/dashboard-ui/src",
+      "prefix": "ngtw19-nx-demo",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/dashboard-ui/tsconfig.lib.json",
+            "project": "libs/dashboard-ui/ng-package.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/dashboard-ui/tsconfig.lib.json",
+              "libs/dashboard-ui/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/dashboard-ui/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/dashboard-ui/jest.config.js",
+            "tsConfig": "libs/dashboard-ui/tsconfig.spec.json",
+            "setupFile": "libs/dashboard-ui/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {

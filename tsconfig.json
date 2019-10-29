@@ -19,7 +19,8 @@
       "@ngtw19-nx-demo/todo-data-access": [
         "libs/todo-data-access/src/index.ts"
       ],
-      "@ngtw19-nx-demo/todo-ui": ["libs/todo-ui/src/index.ts"]
+      "@ngtw19-nx-demo/todo-ui": ["libs/todo-ui/src/index.ts"],
+      "@ngtw19-nx-demo/dashboard-ui": ["libs/dashboard-ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
